@@ -4,4 +4,10 @@ class Picture < ActiveRecord::Base
 
   reverse_geocoded_by :latitude, :longitude
   after_validation :geocode
+
+  after_post_process :copy_exif_data
+
+  def copy_exif_data
+  	binding.pry
+  end
 end
