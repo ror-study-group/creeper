@@ -5,5 +5,9 @@
   <%= @picture.title %>
 </p>
 
+<%= image_tag @picture.image, width: 600 %>
+
+<br>
+
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
 <%= link_to 'Back', pictures_path %>
