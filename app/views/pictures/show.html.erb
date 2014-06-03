@@ -9,5 +9,15 @@
 
 <br>
 
+<iframe
+    width="600"
+    height="450"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>
+    &amp;q=<%= "#{@picture.latitude},#{@picture.longitude}" %>">
+</iframe>
+
+<br>
+
 <%= link_to 'Edit', edit_picture_path(@picture) %> |
 <%= link_to 'Back', pictures_path %>
