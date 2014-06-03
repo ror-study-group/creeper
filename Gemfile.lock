@@ -47,6 +47,9 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     debug_inspector (0.0.2)
+    dotenv (0.10.0)
+    dotenv-rails (0.10.0)
+      dotenv (= 0.10.0)
     erubis (2.7.0)
     execjs (2.1.0)
     geocoder (1.2.1)
@@ -142,6 +145,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   coffee-rails (~> 4.0.0)
+  dotenv-rails
   geocoder
   jbuilder (~> 2.0)
   jquery-rails
